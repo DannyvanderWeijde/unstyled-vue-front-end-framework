@@ -1,11 +1,11 @@
 <template>
-  <nav>
+  <ul class="framework-navbar__list">
     <navbar-item-component
       v-for="(navbarItem, index) in navbarItems"
       :index="index"
       :item="navbarItem"
     ></navbar-item-component>
-  </nav>
+  </ul>
 </template>
 
 <script setup lang="ts">
