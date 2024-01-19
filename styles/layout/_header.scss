@@ -1,0 +1,23 @@
+.framework-app {
+    &__header {
+        align-items: center;
+        display: flex;
+        gap: .5rem;
+        justify-content: space-between;
+
+        &--sticky {
+            left: 0;
+            position: sticky;
+            top: 0;
+        }
+
+        &__left,
+        &__right {
+            flex: 0 0 5rem;
+        }
+
+        &__middle {
+            flex: 1 1 auto;
+        }
+    }
+}

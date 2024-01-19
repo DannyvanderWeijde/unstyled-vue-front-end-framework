@@ -1,15 +1,15 @@
 <template>
   <ul class="framework-navbar__list">
-    <navbar-item-component
+    <navigation-item
       v-for="(navbarItem, index) in navbarItems"
       :index="index"
       :item="navbarItem"
-    ></navbar-item-component>
+    ></navigation-item>
   </ul>
 </template>
 
 <script setup lang="ts">
-  import NavbarItemComponent from './navbarItemComponent.vue'
+  import NavigationItem from 'components/layout/navbar/variant-1/NavigationItem.vue'
 
   defineProps({
     navbarItems: {type: Object, default() {return {}}}
