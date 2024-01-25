@@ -11,13 +11,17 @@
             top: 0;
         }
 
-        &__left,
-        &__right {
-            flex: 0 0 5rem;
-        }
+        &-item {
+            min-width: 0;
 
-        &__middle {
-            flex: 1 1 auto;
+            &--left,
+            &--right {
+                flex: 0 0 5rem;
+            }
+
+            &--middle {
+                flex: 1 1 auto;
+            }
         }
     }
 }
