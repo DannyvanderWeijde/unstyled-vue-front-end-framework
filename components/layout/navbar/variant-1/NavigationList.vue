@@ -1,5 +1,5 @@
 <template>
-  <ul class="framework-navbar__list">
+  <ul class="framework-navbar-list">
     <navigation-item
       v-for="(navbarItem, index) in navbarItems"
       :index="index"

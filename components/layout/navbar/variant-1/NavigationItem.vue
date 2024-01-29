@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="{name: index}" class="framework-navbar__list-item">
+  <router-link :to="{name: index}" class="framework-navbar-list__item">
     {{ item }}
   </router-link>
 </template>

@@ -1,5 +1,5 @@
 .framework-app {
-    &__header {
+    &-header {
         align-items: center;
         display: flex;
         gap: .5rem;
@@ -11,7 +11,7 @@
             top: 0;
         }
 
-        &-item {
+        &__item {
             min-width: 0;
 
             &--left,

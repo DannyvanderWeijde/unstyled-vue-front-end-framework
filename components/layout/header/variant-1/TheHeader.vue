@@ -1,14 +1,14 @@
 <template>
-  <header :class="['framework-app__header', {'framework-app__header--sticky': sticky}, blockClass]">
-    <div v-if="$slots.left" class="framework-app__header-item framework-app__header-item--left">
+  <header :class="['framework-app-header', {'framework-app-header--sticky': sticky}]">
+    <div v-if="$slots.left" :class="['framework-app-header__item framework-app-header__item--left', leftClass]">
       <slot name="left"></slot>
     </div>
 
-    <div v-if="$slots.middle" class="framework-app__header-item framework-app__header-item--middle">
+    <div v-if="$slots.middle" :class="['framework-app-header__item framework-app-header__item--middle', middleClass]">
       <slot name="middle"></slot>
     </div>
 
-    <div v-if="$slots.right" class="framework-app__header-item framework-app__header-item--right">
+    <div v-if="$slots.right" :class="['framework-app-header__item framework-app-header__item--right', rightClass]">
       <slot name="right"></slot>
     </div>
   </header>
@@ -17,6 +17,8 @@
 <script setup lang="ts">
   defineProps({
     sticky: { type: Boolean, default: true },
-    blockClass: { type: String, default: null }
+    leftClass: {type: String, default: null},
+    middleClass: {type: String, default: null},
+    rightClass: {type: String, default: null}
   })
 </script>
