@@ -1,9 +1,9 @@
 <template>
   <section class="framework-app-menu">
-    <div class="framework-app-menu__header">
+    <div v-if="$slots.header" class="framework-app-menu__header">
       <slot name="header"></slot>
     </div>
-    <div class="framework-app-menu__body">
+    <div v-if="$slots.body" class="framework-app-menu__body">
       <slot name="body"></slot>
     </div>
   </section>
